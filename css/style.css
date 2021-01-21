@@ -26,7 +26,6 @@ main{
 }
 
 .container{
-    background-color: yellow;
     height: calc(100% / 3);
     width: 50%;
     margin: auto;
@@ -34,15 +33,49 @@ main{
 }
 
 .carta{
+    position: relative;
+    z-index: 10;
     display: inline-block;
-    margin: 15px;
+    margin: 10px 15px;
     width: calc(100% / 4 - 55px);
     height: calc(100% - 30px);
     border-radius: 10px;
     background-color: white;
 }
 
+.coperta, .scoperta{
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 80%;
+    background-size: contain;
 
-footer{
-    height: 50px;
+}
+
+.coperta{
+    z-index: 2;
+    background-image: url(../img/pattern.png);
+    background-repeat: repeat-y;
+}
+
+.scoperta{
+    z-index: 4;
+    background-image: url(../img/bicycle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+img{
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.descrizione{
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
 }
