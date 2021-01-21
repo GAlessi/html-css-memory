@@ -29,9 +29,9 @@ main{
     height: calc(100% / 3);
     width: 50%;
     margin: auto;
-    border: 1px solid black;
 }
 
+/* contenuto carte */
 .carta{
     position: relative;
     display: inline-block;
@@ -47,12 +47,10 @@ main{
     border-radius: 10px;
     width: 100%;
     background-size: contain;
-
 }
 
-
 .coperta{
-    z-index: 11;
+    z-index: 2;
     height: 100%;
     background-image: url(../img/pattern.png);
     background-repeat: repeat-y;
@@ -60,25 +58,24 @@ main{
 
 .scoperta{
     height: 80%;
-    z-index: 4;
-    background-image: url(../img/bicycle.png);
+    z-index: 1;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
-.descrizione{
+
+.descrizione {
     height: 20%;
+    width: 100%;
+    text-align: center;
     position: absolute;
     bottom: 0;
-    left: 20%;
-    z-index: 1;
+    left: 0;
 }
 
 .bianco{
     background-color: white;
     position: absolute;
-    z-index: 10;
 }
 
 .coperta:hover{
@@ -87,4 +84,29 @@ main{
 
 .coperta:hover + .descrizione{
     display: inline-block;
+}
+
+/* immagini carte */
+.balloon{
+    background-image: url(../img/balloon.png);
+}
+
+.bicycle{
+    background-image: url(../img/bicycle.png);
+}
+
+.ship{
+    background-image: url(../img/ship.png);
+}
+
+.submarine{
+    background-image: url(../img/submarine.png);
+}
+
+.tractor{
+    background-image: url(../img/tractor.png);
+}
+
+.tram{
+    background-image: url(../img/tram.png);
 }
