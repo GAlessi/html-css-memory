@@ -125,3 +125,7 @@ main{
     background-image: url(../img/tram.png);
     color: rgb(209,114,2);
 }
+
+.descrizione:hover{
+    color: orange;
+}
