@@ -34,7 +34,6 @@ main{
 
 .carta{
     position: relative;
-    z-index: 10;
     display: inline-block;
     margin: 10px 15px;
     width: calc(100% / 4 - 55px);
@@ -43,22 +42,24 @@ main{
     background-color: white;
 }
 
-.coperta, .scoperta{
+.coperta, .scoperta, .bianco{
     position: absolute;
     border-radius: 10px;
     width: 100%;
-    height: 80%;
     background-size: contain;
 
 }
 
+
 .coperta{
-    z-index: 2;
+    z-index: 11;
+    height: 100%;
     background-image: url(../img/pattern.png);
     background-repeat: repeat-y;
 }
 
 .scoperta{
+    height: 80%;
     z-index: 4;
     background-image: url(../img/bicycle.png);
     background-repeat: no-repeat;
@@ -66,16 +67,24 @@ main{
 
 }
 
-img{
-    width: 100%;
-    height: 80%;
-    background-color: white;
-    border-radius: 10px;
-}
-
 .descrizione{
     height: 20%;
     position: absolute;
     bottom: 0;
     left: 20%;
+    z-index: 1;
+}
+
+.bianco{
+    background-color: white;
+    position: absolute;
+    z-index: 10;
+}
+
+.coperta:hover{
+    display: none;
+}
+
+.coperta:hover + .descrizione{
+    display: inline-block;
 }
