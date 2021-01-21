@@ -1,5 +1,8 @@
 *{
     font-family: 'Nerko One', cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -10,9 +13,36 @@ body{
 h1{
     font-size: 60px;
     color: white;
+    margin-top: 20px;
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
+}
+
+main{
+    height: calc(100vh - 160px);
+}
+
+.container{
+    background-color: yellow;
+    height: calc(100% / 3);
+    width: 50%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.carta{
+    display: inline-block;
+    margin: 15px;
+    width: calc(100% / 4 - 55px);
+    height: calc(100% - 30px);
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+footer{
+    height: 50px;
 }
