@@ -42,18 +42,25 @@ main{
     background-color: white;
 }
 
-.coperta, .scoperta, .bianco{
+.immagine{
     position: absolute;
     border-radius: 10px;
     width: 100%;
     background-size: contain;
-}
-
-.coperta{
-    z-index: 2;
     height: 100%;
     background-image: url(../img/pattern.png);
     background-repeat: repeat-y;
+}
+
+.descrizione{
+    display: none;
+    height: 20%;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .coperta_speciale{
@@ -65,65 +72,69 @@ main{
     background-position: center;
 }
 
-.scoperta{
-    height: 80%;
-    z-index: 1;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.descrizione {
-    height: 20%;
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.bianco{
-    background-color: white;
-    position: absolute;
-}
-
-.coperta:hover{
-    display: none;
-}
-
-.coperta:hover + .descrizione{
+.balloon_speciale{
     display: inline-block;
+    color: rgb(196,22,240);
 }
 
-/* immagini carte e colore scritte */
+/*colore scritte */
 .balloon{
-    background-image: url(../img/balloon.png);
     color: rgb(196,22,240);
 }
 
 .bicycle{
-    background-image: url(../img/bicycle.png);
     color: rgb(249,8,8);
 }
 
 .ship{
-    background-image: url(../img/ship.png);
     color: rgb(8,249,217);
 }
 
 .submarine{
-    background-image: url(../img/submarine.png);
     color: rgb(31,74,186);
 }
 
 .tractor{
-    background-image: url(../img/tractor.png);
     color: rgb(8,132,2);
 }
 
 .tram{
-    background-image: url(../img/tram.png);
     color: rgb(209,114,2);
+}
+
+/* immagini delle carte */
+.carta:hover  .immagine.tram{
+    background-image: url(../img/tram.png);
+    background-repeat: no-repeat;
+}
+
+.carta:hover  .immagine.tractor{
+    background-image: url(../img/tractor.png);
+    background-repeat: no-repeat;
+}
+
+.carta:hover  .immagine.balloon{
+    background-image: url(../img/balloon.png);
+    background-repeat: no-repeat;
+}
+
+.carta:hover  .immagine.bicycle{
+    background-image: url(../img/bicycle.png);
+    background-repeat: no-repeat;
+}
+
+.carta:hover  .immagine.ship{
+    background-image: url(../img/ship.png);
+    background-repeat: no-repeat;
+}
+
+.carta:hover  .immagine.submarine{
+    background-image: url(../img/submarine.png);
+    background-repeat: no-repeat;
+}
+
+.carta:hover .descrizione{
+    display: inline-block;
 }
 
 .descrizione:hover{
